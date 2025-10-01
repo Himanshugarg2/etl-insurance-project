@@ -6,18 +6,18 @@ Automation is provided via **Prefect** (and Airflow-ready code for future scalin
 
 ---
 
-## 🚀 Features
-- 📥 **Extract:** Downloads the [Insurance Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) using `kagglehub`.
-- 🔧 **Transform:** Cleans data, handles missing values, engineers new features such as:
+##  Features
+-  **Extract:** Downloads the [Insurance Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) using `kagglehub`.
+-  **Transform:** Cleans data, handles missing values, engineers new features such as:
   - `bmi_category` → *Underweight / Normal / Overweight / Obese*
   - `is_senior` → Identifies senior citizens (age ≥ 60)
-- 💾 **Load:** Saves the transformed data into a **SQLite database** (`insurance.db`) for downstream analytics.
-- ⚡ **Automated Orchestration:** Supports running via **Prefect flows** or **Apache Airflow DAG**.
-- 📊 **SQL Queries:** Sample queries to analyze trends such as charges by BMI category and smoker status.
+-  **Load:** Saves the transformed data into a **SQLite database** (`insurance.db`) for downstream analytics.
+- **Automated Orchestration:** Supports running via **Prefect flows** or **Apache Airflow DAG**.
+-  **SQL Queries:** Sample queries to analyze trends such as charges by BMI category and smoker status.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```
 etl_insurance_project/
 │── etl_flow.py                # Prefect ETL flow
@@ -34,7 +34,7 @@ etl_insurance_project/
 
 ---
 
-## 🛠️ Setup & Installation
+## Setup & Installation
 1. **Clone the repository** and navigate to the project folder.
 2. **Create a virtual environment:**
    ```powershell
@@ -49,7 +49,7 @@ etl_insurance_project/
 
 ---
 
-## ▶️ Usage
+## Usage
 ### Run the ETL pipeline with Prefect:
 ```powershell
 python etl_flow.py
@@ -69,14 +69,14 @@ python scripts/test_queries.py
 
 ---
 
-## 📈 Example Analyses
+##  Example Analyses
 - **Total records**
 - **Average charges by BMI category**
 - **Senior citizens who are smokers**
 
 ---
 
-## 📦 Requirements
+##  Requirements
 - Python 3.8+
 - pandas
 - kagglehub
@@ -86,12 +86,10 @@ python scripts/test_queries.py
 
 ---
 
-## 📚 References
+##  References
 - [Kaggle Insurance Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance)
 - [Prefect Documentation](https://docs.prefect.io/)
 - [KaggleHub Documentation](https://github.com/kagglehub/kagglehub)
 
 ---
 
-## 📝 License
-MIT
