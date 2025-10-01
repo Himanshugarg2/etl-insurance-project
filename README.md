@@ -1,4 +1,4 @@
-# 🩺 ETL Insurance Project
+#  ETL Insurance Project
 
 This project demonstrates a complete **ETL (Extract → Transform → Load)** pipeline for **health insurance claims data**.  
 The pipeline fetches the dataset from **Kaggle**, cleans and transforms it using **Pandas**, and loads it into a **SQLite database** for analysis.  
